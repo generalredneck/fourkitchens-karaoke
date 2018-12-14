@@ -1,0 +1,14 @@
+uuid: 34704d79-b455-4256-becf-94672cb9f378
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - generalredneck@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
