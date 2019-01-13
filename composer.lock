@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4dd45f352cd34d344a1a57906c7dde9",
+    "content-hash": "71da248c73f5cb864600bea6d12d29dd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2373,12 +2373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git",
-                "reference": "f1587766f7a9a51e00fd0479ace71f91f75dfce5"
+                "reference": "b7497787501543d8efcf48ebdedc27df1a45c41d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/f1587766f7a9a51e00fd0479ace71f91f75dfce5",
-                "reference": "f1587766f7a9a51e00fd0479ace71f91f75dfce5",
+                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/b7497787501543d8efcf48ebdedc27df1a45c41d",
+                "reference": "b7497787501543d8efcf48ebdedc27df1a45c41d",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2398,7 @@
                 "issues": "https://www.drupal.org/project/issues/openkj",
                 "source": "http://cgit.drupalcode.org/openkj"
             },
-            "time": "2018-12-09T22:03:31+00:00"
+            "time": "2019-01-13T19:40:45+00:00"
         },
         {
             "name": "drupal/restui",
@@ -2575,6 +2575,73 @@
             "homepage": "https://www.drupal.org/project/simple_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/simple_block"
+            }
+        },
+        {
+            "name": "drupal/token",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/token",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "6382a7e1aabbd8246f1117a26bf4916d285b401d"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1537557481",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "support": {
+                "source": "http://cgit.drupalcode.org/token"
             }
         },
         {

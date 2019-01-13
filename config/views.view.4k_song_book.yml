@@ -250,7 +250,7 @@ display:
             alter_text: true
             text: Request
             make_link: true
-            path: 'admin/structure/song_request/add?song_id={{ id__value }}'
+            path: 'openkj/song_request/add?song_id={{ id__value }}'
             absolute: false
             external: false
             replace_spaces: false

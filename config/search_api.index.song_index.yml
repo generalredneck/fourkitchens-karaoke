@@ -5,6 +5,8 @@ dependencies:
   module:
     - openkj
     - search_api
+  config:
+    - search_api.server.songbook_server
 _core:
   default_config_hash: DmHCLdV_Rvd2ijXZZaa0Es0_I8kkc4yhPTU5LssWcUA
 id: song_index
@@ -19,6 +21,8 @@ field_settings:
     type: text
     dependencies:
       module:
+        - openkj
+        - openkj
         - openkj
   song_name:
     label: 'Song Name'
@@ -75,4 +79,4 @@ tracker_settings:
 options:
   index_directly: true
   cron_limit: 50
-server: localhost
+server: songbook_server

@@ -12,6 +12,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'restful post openkj_api_resource'
   - 'search content'
   - 'use text format restricted_html'
   - 'view published artist entities'

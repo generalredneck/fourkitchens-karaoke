@@ -1,0 +1,17 @@
+uuid: ca5875d7-97a6-4983-8324-aefbf8bd3008
+langcode: en
+status: true
+dependencies:
+  module:
+    - openkj
+    - serialization
+    - user
+id: openkj_api_resource
+plugin_id: openkj_api_resource
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

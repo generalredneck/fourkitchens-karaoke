@@ -36,3 +36,5 @@ if (file_exists($local_settings)) {
  * modifying settings.php.
  */
 $settings['install_profile'] = 'standard';
+
+$config['openkj.settings']['api_key'] = '12345';
