@@ -1,11 +1,11 @@
 uuid: ef1c7967-b986-494d-ab7a-24fffe9eb6f5
-name: fourkitchens-karaoke
+name: 'Four Kitchens Karaoke'
 mail: generalredneck@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /song-book
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

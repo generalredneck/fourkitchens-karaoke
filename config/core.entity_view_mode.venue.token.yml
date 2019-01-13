@@ -1,0 +1,10 @@
+uuid: 23410927-f3eb-4007-9fcf-aa165efdb8bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - openkj
+id: venue.token
+label: Token
+targetEntityType: venue
+cache: true

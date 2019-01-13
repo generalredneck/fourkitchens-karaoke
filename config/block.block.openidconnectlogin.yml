@@ -1,0 +1,26 @@
+uuid: 8e638524-7a90-4e98-9401-6eee7e9cad11
+langcode: en
+status: true
+dependencies:
+  module:
+    - openid_connect
+    - system
+  theme:
+    - bootstrap
+id: openidconnectlogin
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: openid_connect_login
+settings:
+  id: openid_connect_login
+  label: 'OpenID Connect login'
+  provider: openid_connect
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: false
+    context_mapping: {  }

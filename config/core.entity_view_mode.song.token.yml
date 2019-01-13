@@ -1,0 +1,10 @@
+uuid: 3a16f52a-5e13-4dd0-93a9-09fdb8771259
+langcode: en
+status: true
+dependencies:
+  module:
+    - openkj
+id: song.token
+label: Token
+targetEntityType: song
+cache: true
