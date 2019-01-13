@@ -38,3 +38,4 @@ if (file_exists($local_settings)) {
 $settings['install_profile'] = 'standard';
 
 $config['openkj.settings']['api_key'] = '12345';
+$config['openkj.settings']['default_venue'] = '1';
