@@ -11,23 +11,49 @@
         {
             "type": "vcs",
             "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "musixmatch/musixmatch-sdk-php-client",
+                "version": "master-dev",
+                "dist": {
+                    "url": "https://raw.githubusercontent.com/musixmatch/musixmatch-sdk/master/dist/php-client-generated.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": ">=5.5",
+                    "ext-curl": "*",
+                    "ext-json": "*",
+                    "ext-mbstring": "*",
+                    "guzzlehttp/guzzle": "^6.2"
+                },
+                "autoload": {
+                    "psr-4": { "Swagger\\Client\\" : "lib/" }
+                },
+                "autoload-dev": {
+                    "psr-4": { "Swagger\\Client\\" : "test/" }
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.1",
-        "drupal/better_exposed_filters": "^3.0-alpha5",
+        "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/bootstrap": "~3.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core": "^8",
+        "drupal/openid_connect": "^1.0@beta",
         "drupal/openkj": "dev-8.x-1.x",
         "drupal/simple_block": "^1.0@beta",
         "drupal/views_bootstrap": "~3.1",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~9",
+        "musixmatch/musixmatch-sdk-php-client": "master-dev",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8"
