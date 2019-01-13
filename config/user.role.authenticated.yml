@@ -17,3 +17,7 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view published artist entities'
+  - 'view published song entities'
+  - 'view published song request entities'
+  - 'view published venue entities'
