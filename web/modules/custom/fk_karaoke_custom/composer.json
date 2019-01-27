@@ -1,0 +1,14 @@
+{
+  "name": "drupal/fk_karaoke_custom",
+  "type": "drupal-module",
+  "description": "General enhancements to the site",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/fk_karaoke_custom",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/fk_karaoke_custom",
+    "source": "http://cgit.drupalcode.org/fk_karaoke_custom"
+  },
+  "require": { }
+}

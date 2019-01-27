@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70c543b267d4f685a599fd9614f9899a",
+    "content-hash": "f9d94fcb81ca65178828ef197e0dfbe2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2374,12 +2374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git",
-                "reference": "ac58066520554edaae1ff6c9b195888e29548d22"
+                "reference": "57b9b68ac49be2204ff824e35c0d0f2842e5c6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/ac58066520554edaae1ff6c9b195888e29548d22",
-                "reference": "ac58066520554edaae1ff6c9b195888e29548d22",
+                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/57b9b68ac49be2204ff824e35c0d0f2842e5c6fa",
+                "reference": "57b9b68ac49be2204ff824e35c0d0f2842e5c6fa",
                 "shasum": ""
             },
             "require": {
@@ -2399,7 +2399,90 @@
                 "issues": "https://www.drupal.org/project/issues/openkj",
                 "source": "http://cgit.drupalcode.org/openkj"
             },
-            "time": "2019-01-25T03:18:19+00:00"
+            "time": "2019-01-27T18:05:30+00:00"
+        },
+        {
+            "name": "drupal/r4032login",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/r4032login",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/r4032login-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "dd9dc2daf8e4b960d2be1fe58e19a8ec4fbf30f1"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1533913684",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bevan",
+                    "homepage": "https://www.drupal.org/user/49989"
+                },
+                {
+                    "name": "Nixou",
+                    "homepage": "https://www.drupal.org/user/2304734"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "Sk8erPeter",
+                    "homepage": "https://www.drupal.org/user/1441344"
+                },
+                {
+                    "name": "bdone",
+                    "homepage": "https://www.drupal.org/user/687670"
+                },
+                {
+                    "name": "deekayen",
+                    "homepage": "https://www.drupal.org/user/972"
+                },
+                {
+                    "name": "lotyrin",
+                    "homepage": "https://www.drupal.org/user/216580"
+                },
+                {
+                    "name": "mikesmullin",
+                    "homepage": "https://www.drupal.org/user/108440"
+                },
+                {
+                    "name": "pwolanin",
+                    "homepage": "https://www.drupal.org/user/49851"
+                },
+                {
+                    "name": "shrop",
+                    "homepage": "https://www.drupal.org/user/14767"
+                }
+            ],
+            "description": "Redirect anonymous users from 403 Access Denied pages to the /user/login page.",
+            "homepage": "https://www.drupal.org/project/r4032login",
+            "support": {
+                "source": "http://cgit.drupalcode.org/r4032login"
+            }
         },
         {
             "name": "drupal/restui",

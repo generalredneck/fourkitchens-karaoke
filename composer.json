@@ -25,6 +25,7 @@
         "drupal/core": "^8",
         "drupal/openid_connect": "^1.0@beta",
         "drupal/openkj": "dev-8.x-1.x",
+        "drupal/r4032login": "^1.1",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
         "drupal/views_ajax_history": "1.x-dev",

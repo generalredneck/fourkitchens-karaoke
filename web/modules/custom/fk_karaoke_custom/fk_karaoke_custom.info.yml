@@ -1,0 +1,7 @@
+name: 'Four Kitchens Karake Custom'
+type: module
+description: 'General enhancements to the site'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - openid_connect

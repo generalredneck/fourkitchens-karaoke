@@ -1,4 +1,4 @@
-enabled: true
+enabled: false
 settings:
   redirect_url: ''
   client_id: '377447186398925'
