@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - search_api.index.song_index
+    - views.view.recent_requests
   module:
     - better_exposed_filters
     - search_api
@@ -507,9 +508,20 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results to show. Enter part of a song title, artist, or lyrics. Make sure to check your spelling.'
+            value: "No results to show. Enter part of a song title, artist, or lyrics. Make sure to check your spelling.\r\n<h2>Songs Requested Today</h2>"
             format: basic_html
           plugin_id: text
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          view_to_insert: 'recent_requests:block_1'
+          inherit_arguments: false
+          plugin_id: view
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
