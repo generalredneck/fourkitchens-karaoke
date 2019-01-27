@@ -1,0 +1,37 @@
+{
+  "name": "drupal/openkj_musixmatch",
+  "type": "drupal-module",
+  "description": "MusixMatch API integration with OpenKJ",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "musixmatch/musixmatch-sdk-php",
+            "version": "dev-master",
+            "dist": {
+                "url": "https://raw.githubusercontent.com/musixmatch/musixmatch-sdk/master/dist/php-client-generated.zip",
+                "type": "zip"
+            },
+            "require": {
+                "php": ">=5.5",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^6.2"
+            },
+            "autoload": {
+                "psr-4": { "Swagger\\Client\\" : "SwaggerClient-php/lib/" }
+            },
+            "autoload-dev": {
+                "psr-4": { "Swagger\\Client\\" : "SwaggerClient-php/test/" }
+            }
+        }
+    }
+  ],
+  "require": {
+    "musixmatch/musixmatch-sdk-php": "dev-master"
+  }
+}

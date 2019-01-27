@@ -1,0 +1,7 @@
+name: 'openkj_musixmatch'
+type: module
+description: 'MusixMatch API integration with OpenKJ'
+core: 8.x
+package: 'OpenKJ'
+dependencies:
+  - openkj

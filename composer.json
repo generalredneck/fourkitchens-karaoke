@@ -11,30 +11,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "musixmatch/musixmatch-sdk-php-client",
-                "version": "master-dev",
-                "dist": {
-                    "url": "https://raw.githubusercontent.com/musixmatch/musixmatch-sdk/master/dist/php-client-generated.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "php": ">=5.5",
-                    "ext-curl": "*",
-                    "ext-json": "*",
-                    "ext-mbstring": "*",
-                    "guzzlehttp/guzzle": "^6.2"
-                },
-                "autoload": {
-                    "psr-4": { "Swagger\\Client\\" : "lib/" }
-                },
-                "autoload-dev": {
-                    "psr-4": { "Swagger\\Client\\" : "test/" }
-                }
-            }
         }
     ],
     "require": {
@@ -52,12 +28,13 @@
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
         "drupal/views_bootstrap": "~3.1",
+        "drupal/views_infinite_scroll": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~9",
-        "musixmatch/musixmatch-sdk-php-client": "master-dev",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "webflo/drupal-core-strict": "^8"
+        "webflo/drupal-core-strict": "^8",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.2",
@@ -145,6 +122,18 @@
                 ".htaccess",
                 "web.config"
             ]
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/custom/*/composer.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
         }
     },
     "config": {
