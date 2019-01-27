@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f7a130cecb4a74f818a0196ea83f48b",
+    "content-hash": "70c543b267d4f685a599fd9614f9899a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2644,6 +2644,64 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
             }
+        },
+        {
+            "name": "drupal/views_ajax_history",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_ajax_history",
+                "reference": "bea2456b51ece7630153417d6c85c03a674b6d1c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+1-dev",
+                    "datestamp": "1536129780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "#3028400: Wrong URL with infinite scroll": "https://www.drupal.org/files/issues/2019-01-25/view_ajax_history_infinite_scroll.diff",
+                    "CUSTOM: Remove Page arg from url history in Inifinite Scroll Views": "patches/views_ajax_history-remove_pages_from_infinit_scroll_view_history.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "kalman.hosszu",
+                    "homepage": "https://www.drupal.org/user/267481"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                }
+            ],
+            "description": "Add bookmarking abilities to AJAX Views.",
+            "homepage": "https://www.drupal.org/project/views_ajax_history",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_ajax_history"
+            },
+            "time": "2018-10-16T22:49:51+00:00"
         },
         {
             "name": "drupal/views_bootstrap",
@@ -8139,6 +8197,7 @@
         "drupal/openid_connect": 10,
         "drupal/openkj": 20,
         "drupal/simple_block": 10,
+        "drupal/views_ajax_history": 20,
         "musixmatch/musixmatch-sdk-php": 20
     },
     "prefer-stable": true,

@@ -1,0 +1,17 @@
+diff --git a/js/views_ajax_history.js b/js/views_ajax_history.js
+index 4a301ab..0fd1840 100644
+--- a/js/views_ajax_history.js
++++ b/js/views_ajax_history.js
+@@ -91,6 +91,12 @@
+    */
+   var cleanURL = function (url, viewArgs) {
+     var args = parseQueryString(url);
++
++    // Removing page from arks for infinite scroll.
++    if ($('[data-drupal-views-infinite-scroll-pager]').length) {
++      delete args.page;
++    }
++
+     var query = [];
+ 
+     // With clean urls off we need to add the 'q' parameter.

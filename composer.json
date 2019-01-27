@@ -27,6 +27,7 @@
         "drupal/openkj": "dev-8.x-1.x",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
+        "drupal/views_ajax_history": "1.x-dev",
         "drupal/views_bootstrap": "~3.1",
         "drupal/views_infinite_scroll": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
@@ -134,6 +135,12 @@
             "merge-extra": false,
             "merge-extra-deep": false,
             "merge-scripts": false
+        },
+        "patches": {
+            "drupal/views_ajax_history": {
+                "#3028400: Wrong URL with infinite scroll": "https://www.drupal.org/files/issues/2019-01-25/view_ajax_history_infinite_scroll.diff",
+                "CUSTOM: Remove Page arg from url history in Inifinite Scroll Views": "patches/views_ajax_history-remove_pages_from_infinit_scroll_view_history.patch"
+            }
         }
     },
     "config": {
