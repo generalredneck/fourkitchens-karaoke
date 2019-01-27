@@ -1,0 +1,20 @@
+uuid: b2119aaa-fd2e-449b-beb4-a18ece22eb20
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fk_karaoke
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: fk_karaoke_local_actions
+theme: fk_karaoke
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: ecb7095e-0045-491b-b5bb-f8ef66e5993b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fk_karaoke
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: fk_karaoke_page_title
+theme: fk_karaoke
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
