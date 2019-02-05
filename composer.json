@@ -71,7 +71,6 @@
         "unit-test": "echo 'No unit test step defined.'",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
-        "theme-path": "THEMEPATH=web/themes/custom/karaoke",
         "build-theme": "./scripts/composer/prepare-theme.sh web/themes/custom/karaoke",
         "post-install-cmd": [
             "@build-theme",
