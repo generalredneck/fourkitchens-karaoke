@@ -57,6 +57,7 @@ module:
   views: 10
   standard: 1000
 theme:
+  bootstrap: 0
   stable: 0
   classy: 0
   seven: 0
