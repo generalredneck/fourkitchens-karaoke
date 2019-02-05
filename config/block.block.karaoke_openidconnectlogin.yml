@@ -1,4 +1,4 @@
-uuid: 14cad057-8cdb-459e-9cab-88121c61dd71
+uuid: 77e752da-6121-4534-b2ae-a95b093bcefc
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - openid_connect
     - system
   theme:
-    - fk_karaoke
-id: fk_karaoke_openidconnectlogin
-theme: fk_karaoke
+    - karaoke
+id: karaoke_openidconnectlogin
+theme: karaoke
 region: content
 weight: 0
 provider: null

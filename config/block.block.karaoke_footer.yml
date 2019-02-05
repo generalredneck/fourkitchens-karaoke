@@ -1,4 +1,4 @@
-uuid: b03df5fb-8eb2-4d13-93dd-8cb8a4de789d
+uuid: 84be854d-ff8a-4c0a-adfc-ee9c3c21bd34
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - fk_karaoke
+    - karaoke
 _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
-id: fk_karaoke_footer
-theme: fk_karaoke
+id: karaoke_footer
+theme: karaoke
 region: footer
 weight: 0
 provider: null

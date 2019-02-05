@@ -1,4 +1,4 @@
-uuid: 8dc7ff6f-7777-4137-8a4d-e53af91e36df
+uuid: 3ceb23ea-791f-45ac-8af6-0f681e1a2d06
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - karaoke
 _core:
   default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
-id: bootstrap_main_menu
-theme: bootstrap
-region: navigation_collapsible
+id: karaoke_main_menu
+theme: karaoke
+region: header
 weight: 10
 provider: null
 plugin: 'system_menu_block:main'

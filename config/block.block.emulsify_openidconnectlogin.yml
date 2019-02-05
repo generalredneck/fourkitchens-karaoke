@@ -1,4 +1,4 @@
-uuid: 8e638524-7a90-4e98-9401-6eee7e9cad11
+uuid: f368d048-a9fe-4016-ac82-ca877688bcf4
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - openid_connect
     - system
   theme:
-    - bootstrap
-id: openidconnectlogin
-theme: bootstrap
+    - emulsify
+id: emulsify_openidconnectlogin
+theme: emulsify
 region: content
 weight: 0
 provider: null

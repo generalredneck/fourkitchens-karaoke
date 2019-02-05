@@ -1,16 +1,16 @@
-uuid: 947b9533-68ed-4be6-83d6-cff6767edfa4
+uuid: f2756b09-5c20-44f5-b811-d6dad681fe15
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - fk_karaoke
+    - karaoke
 _core:
   default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: fk_karaoke_help
-theme: fk_karaoke
-region: help
+id: karaoke_help
+theme: karaoke
+region: header
 weight: -30
 provider: null
 plugin: help_block

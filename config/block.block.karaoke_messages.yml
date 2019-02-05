@@ -1,15 +1,15 @@
-uuid: 21d01df9-87ff-40bc-bb16-a94ff7826430
+uuid: 05e3d08b-cf38-493e-8359-86fba20bbaa0
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - karaoke
 _core:
   default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
-id: bootstrap_messages
-theme: bootstrap
+id: karaoke_messages
+theme: karaoke
 region: header
 weight: -50
 provider: null

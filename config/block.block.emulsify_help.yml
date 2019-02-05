@@ -1,16 +1,16 @@
-uuid: e58c0435-4e1b-499a-a63d-7c59eb79b119
+uuid: 87057517-7568-4add-a8cc-09c62a3da191
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bootstrap
+    - emulsify
 _core:
   default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: bootstrap_help
-theme: bootstrap
-region: help
+id: emulsify_help
+theme: emulsify
+region: header
 weight: -30
 provider: null
 plugin: help_block

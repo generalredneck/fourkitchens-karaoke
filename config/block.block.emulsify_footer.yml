@@ -1,4 +1,4 @@
-uuid: c112a747-9341-4da4-914a-1890f945fd99
+uuid: b0e13fe2-524a-4706-9528-a6f8dff02e1b
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - emulsify
 _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
-id: bootstrap_footer
-theme: bootstrap
+id: emulsify_footer
+theme: emulsify
 region: footer
 weight: 0
 provider: null

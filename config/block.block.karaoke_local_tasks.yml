@@ -1,13 +1,13 @@
-uuid: e155a446-c349-4c33-9cf4-f2dea4b7faec
+uuid: 525d1ef8-0f04-4229-8d53-dbe0d1952b7f
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap
+    - karaoke
 _core:
   default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
-id: bootstrap_local_tasks
-theme: bootstrap
+id: karaoke_local_tasks
+theme: karaoke
 region: header
 weight: 10
 provider: null

@@ -1,4 +1,4 @@
-uuid: 25dd7ce0-1b3f-4336-800c-d711b1b24b24
+uuid: 698a703f-a32e-46c3-bf22-75ce6dd32d69
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - fk_karaoke
+    - emulsify
 _core:
   default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
-id: fk_karaoke_account_menu
-theme: fk_karaoke
-region: navigation_collapsible
+id: emulsify_account_menu
+theme: emulsify
+region: header
 weight: 11
 provider: null
 plugin: 'system_menu_block:account'

@@ -1,13 +1,13 @@
-uuid: ecb7095e-0045-491b-b5bb-f8ef66e5993b
+uuid: 170da307-f72d-46bc-a736-62e3792a60b2
 langcode: en
 status: true
 dependencies:
   theme:
-    - fk_karaoke
+    - karaoke
 _core:
   default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
-id: fk_karaoke_page_title
-theme: fk_karaoke
+id: karaoke_page_title
+theme: karaoke
 region: header
 weight: 0
 provider: null

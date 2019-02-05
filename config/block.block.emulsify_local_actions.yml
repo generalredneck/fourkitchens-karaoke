@@ -1,13 +1,13 @@
-uuid: ff1e7620-185f-4697-aef6-978003089924
+uuid: 158f1dcb-0aaa-4785-81c4-a42fd122e248
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap
+    - emulsify
 _core:
   default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
-id: bootstrap_local_actions
-theme: bootstrap
+id: emulsify_local_actions
+theme: emulsify
 region: header
 weight: 20
 provider: null

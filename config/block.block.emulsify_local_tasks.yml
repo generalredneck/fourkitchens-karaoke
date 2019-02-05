@@ -1,13 +1,13 @@
-uuid: e0887087-0487-4783-8d58-22c5f4097a38
+uuid: fe80e735-ca20-4133-850a-d208377894b7
 langcode: en
 status: true
 dependencies:
   theme:
-    - fk_karaoke
+    - emulsify
 _core:
   default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
-id: fk_karaoke_local_tasks
-theme: fk_karaoke
+id: emulsify_local_tasks
+theme: emulsify
 region: header
 weight: 10
 provider: null
