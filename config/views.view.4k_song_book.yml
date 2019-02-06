@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - search_api.index.song_index
-    - views.view.recent_requests
   module:
     - better_exposed_filters
     - search_api
-    - views_bootstrap
     - views_infinite_scroll
 _core:
   default_config_hash: DjfKDeAzryI7IPryXuiC8NwWj1uvb84-8YyyJJUuY4Y
@@ -45,7 +43,7 @@ display:
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: Sort
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
           input_required: false
@@ -58,7 +56,7 @@ display:
               autosubmit_exclude_textfield: true
               autosubmit_hide: false
             sort:
-              bef_format: default
+              bef_format: bef
               advanced:
                 collapsible: false
                 collapsible_label: 'Sort options'
@@ -71,7 +69,7 @@ display:
               bef_format: default
               more_options:
                 is_secondary: false
-                placeholder_text: ''
+                placeholder_text: 'Song or Artist…'
                 rewrite:
                   filter_rewrite_values: ''
           text_input_required_format: basic_html
@@ -97,48 +95,11 @@ display:
             button_text: 'Load More'
             automatically_load_content: true
       style:
-        type: views_bootstrap_table
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          override: 1
-          sticky: 1
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            artist_name: artist_name
-            song_name: song_name
-            id: id
-          info:
-            artist_name:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            song_name:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            id:
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-          default: '-1'
-          empty_table: 0
-          responsive: 1
-          bootstrap_styles:
-            striped: 0
-            bordered: 0
-            hover: 0
-            condensed: 0
       row:
         type: fields
       fields:
@@ -235,8 +196,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: 'openkj/request-song?song_id={{ id }}'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -263,7 +224,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -307,8 +268,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: 'openkj/request-song?song_id={{ id }}'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -335,7 +296,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -371,12 +332,12 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: 'Song Request Link'
+          admin_label: ''
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: 🎤
+            text: 'Request Song'
             make_link: true
             path: 'openkj/request-song?song_id={{ id }}'
             absolute: false
@@ -428,7 +389,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Search
+            label: 'Search by Song or Artist'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -458,18 +419,6 @@ display:
           fields: {  }
           plugin_id: search_api_fulltext
       sorts:
-        search_api_relevance:
-          id: search_api_relevance
-          table: search_api_index_song_index
-          field: search_api_relevance
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: Relevance
-          plugin_id: search_api
         artist_name:
           id: artist_name
           table: search_api_index_song_index
@@ -480,7 +429,7 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'Artist Name'
+            label: Artist
           plugin_id: search_api
         song_name:
           id: song_name
@@ -492,7 +441,7 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'Song Name'
+            label: Song
           plugin_id: search_api
       title: 'Song Book'
       header: {  }
@@ -508,20 +457,9 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "No results to show. Enter part of a song title, artist, or lyrics. Make sure to check your spelling.\r\n<h2>Songs Requested Today</h2>"
+            value: 'No results to show. Enter part of a song title, artist, or lyrics. Make sure to check your spelling.'
             format: basic_html
           plugin_id: text
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          view_to_insert: 'recent_requests:block_1'
-          inherit_arguments: false
-          plugin_id: view
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -534,7 +472,6 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
       tags: {  }
   song_book_page:
     display_plugin: page
@@ -553,5 +490,4 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
       tags: {  }

@@ -4,6 +4,7 @@ config:
   framework: drupal8
   site: fourkitchens-karaoke
   id: ab2c6c8d-facb-4664-90fb-582a0d236de2
+  xdebug: true
 tooling:
   drush:
     cmd: "drush --root=/app/web"

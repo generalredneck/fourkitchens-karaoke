@@ -10,7 +10,7 @@ dependencies:
 id: karaoke_openidconnectlogin
 theme: karaoke
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: openid_connect_login
 settings:
