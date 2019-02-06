@@ -62,3 +62,4 @@ component-libraries:
   pages:
     paths:
       - components/_patterns/05-pages
+logo: 'images/logo.svg'
