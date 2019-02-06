@@ -1,0 +1,5 @@
+button_content: "Big Button"
+button_url: "#"
+button_extra_classes:
+  - "btn-primary"
+  - "btn-lg"

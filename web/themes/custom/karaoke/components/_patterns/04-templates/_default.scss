@@ -1,0 +1,23 @@
+.off-screen {
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.25s;
+  transform: translateX(-100%);
+
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+.layout-container {
+  transition: all 0.25s;
+  transform: translateX(0);
+
+  &.open {
+    transform: translateX(100%);
+  }
+}

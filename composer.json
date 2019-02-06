@@ -17,6 +17,7 @@
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.1",
+        "drupal/admin_toolbar": "^1.25",
         "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/bootstrap": "~3.0",
         "drupal/config_direct_save": "^1.0",
@@ -32,7 +33,7 @@
         "drupal/views_bootstrap": "~3.1",
         "drupal/views_infinite_scroll": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
-        "drush/drush": "~9",
+        "fourkitchens/emulsify": "^3.1",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8",
@@ -70,7 +71,9 @@
         "unit-test": "echo 'No unit test step defined.'",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
+        "build-theme": "./scripts/composer/prepare-theme.sh web/themes/custom/karaoke",
         "post-install-cmd": [
+            "@build-theme",
             "@drupal-scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
