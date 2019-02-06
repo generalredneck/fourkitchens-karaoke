@@ -9,7 +9,7 @@ _core:
 id: karaoke_local_tasks
 theme: karaoke
 region: header
-weight: 10
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

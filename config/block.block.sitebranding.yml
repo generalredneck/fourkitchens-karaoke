@@ -1,4 +1,4 @@
-uuid: 7e2a361b-14d7-4b5a-8dea-c387d234debc
+uuid: fc65c183-fc73-406a-8a24-a3acf4a9f1ac
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - karaoke
-_core:
-  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
-id: karaoke_branding
+id: sitebranding
 theme: karaoke
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
@@ -20,6 +18,6 @@ settings:
   provider: system
   label_display: '0'
   use_site_logo: true
-  use_site_name: true
+  use_site_name: false
   use_site_slogan: false
 visibility: {  }
