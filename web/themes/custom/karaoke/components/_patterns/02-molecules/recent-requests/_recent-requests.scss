@@ -20,6 +20,13 @@
   .views-row {
     border-bottom: 1px solid transparentize($gray-light, 0.7);
     padding: 0.25rem;
+
+    img {
+      border-radius: 100%;
+      width: 18px;
+      float: left;
+      margin-right: 0.7rem;
+    }
   }
 
   .views-field-name-1 {
