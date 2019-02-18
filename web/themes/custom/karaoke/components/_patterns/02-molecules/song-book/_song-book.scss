@@ -1,0 +1,34 @@
+.song-book {
+  color: inherit;
+
+  .views-infinite-scroll-content-wrapper {
+    background: $dark-light;
+    border-radius: 5px;
+    color: $dark;
+    padding: 0.5rem;
+
+    .views-row {
+      border-bottom: 1px solid transparentize($dark, 0.8);
+      padding: 1rem 0.5rem;
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    .views-label {
+      font-weight: bold;
+    }
+
+    .views-field-song-name {
+      .field-content {
+        font-style: italic;
+      }
+    }
+
+    .btn-group-sm > .btn-primary.btn,
+    .btn-primary.btn-sm {
+      font-size: 0.8rem;
+      padding: 0.8rem 1.2rem;
+      line-height: 1.2;
+    }
+  }
+}
