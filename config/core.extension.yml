@@ -1,4 +1,6 @@
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   automated_cron: 0
   better_exposed_filters: 0
   big_pipe: 0
@@ -22,6 +24,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -57,12 +60,10 @@ module:
   views: 10
   standard: 1000
 theme:
-  bootstrap: 0
   stable: 0
   classy: 0
   seven: 0
   karaoke: 0
-  emulsify: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -334,7 +334,17 @@ display:
       title: 'Requested Today'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        title:
+          id: title
+          table: views
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          title: 'No requests today'
+          plugin_id: title
       relationships:
         song:
           id: song
@@ -361,6 +371,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
+      css_class: recent-requests
     cache_metadata:
       max-age: -1
       contexts:
