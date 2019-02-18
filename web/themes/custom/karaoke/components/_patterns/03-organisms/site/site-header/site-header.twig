@@ -1,9 +1,9 @@
 <header class="header">
-  {% include "@atoms/04-images/icons/_icon.twig" with { icon_name: 'bars',
-  icon_base_class: 'menu-toggle' } %}
-  <img
-    alt="Karaoke"
-    class="logo"
-    src="/themes/custom/karaoke/images/logo.svg"
-  />
+  {% include "@atoms/04-images/icons/_icon.twig" with {
+    icon_name: 'bars',
+    icon_base_class: 'menu-toggle' }
+  %}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 </header>
