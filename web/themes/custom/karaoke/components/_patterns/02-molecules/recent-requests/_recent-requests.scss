@@ -1,0 +1,29 @@
+.block--recent-requests {
+  margin-bottom: 1rem;
+}
+
+.recent-requests--h2 {
+  color: $gray-light;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.recent-requests--icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+.recent-requests {
+  border-top: 1px solid transparentize($gray-light, 0.7);
+
+  .views-row {
+    border-bottom: 1px solid transparentize($gray-light, 0.7);
+    padding: 0.25rem;
+  }
+
+  .views-field-name-1 {
+    font-style: italic;
+    margin-left: 0.5rem;
+  }
+}
