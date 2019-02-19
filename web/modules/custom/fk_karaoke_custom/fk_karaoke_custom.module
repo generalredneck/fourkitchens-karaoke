@@ -25,6 +25,6 @@ function fk_karaoke_custom_help($route_name, RouteMatchInterface $route_match) {
 
 function fk_karaoke_custom_form_openid_connect_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if (isset($form['openid_connect_client_google_login'])) {
-    $form['openid_connect_client_google_login']['#value'] = t('Log in or Register with Google');
+    $form['openid_connect_client_google_login']['#value'] = t('Login with Google');
   }
 }
