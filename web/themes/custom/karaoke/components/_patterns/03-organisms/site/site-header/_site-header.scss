@@ -6,12 +6,12 @@
   margin-bottom: 4.5rem;
 }
 
-.logo {
+#block-sitebranding img {
   display: inline;
   padding: 1rem 1rem 0;
   filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
   transition: all 0.25s;
-  transform: scale(1.15) rotate(-5deg);
+  max-width: 300px;
 }
 
 .menu-toggle {
@@ -22,6 +22,7 @@
   top: 1rem;
   left: 1.5rem;
   transition: all 0.25s;
+  z-index: 100;
 
   &:hover {
     opacity: 0.8;

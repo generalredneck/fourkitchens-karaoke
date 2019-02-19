@@ -4,11 +4,6 @@ global:
       dist/style.css: {}
       "https://cloud.typography.com/7738032/7783592/css/fonts.css":
         { type: external }
-  js:
-    dist/01-atoms/05-forms/textfields/textfields.js: {}
-    dist/04-templates/default.js: {}
-  dependencies:
-    - core/drupal
 
 main-menu:
   js:

@@ -1,5 +1,5 @@
 .off-screen {
-  background: red;
+  background: linear-gradient(to bottom, $dark, darken($dark, 15%));
   position: absolute;
   top: 0;
   left: 0;

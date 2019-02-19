@@ -8,7 +8,7 @@ items:
   - name: $gray-lighter
     value: '#ccc'
   - name: $gray-light
-    value: '#999'
+    value: '#888'
   - name: $gray
     value: '#666'
   - name: $gray-dark
