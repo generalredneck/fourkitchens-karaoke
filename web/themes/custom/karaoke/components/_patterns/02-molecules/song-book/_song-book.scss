@@ -32,3 +32,17 @@
     }
   }
 }
+
+#views-exposed-form-4k-song-book-song-book-page .form-radios {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .form-item:first-child {
+    margin-right: 1rem;
+  }
+}
+
+fieldset#edit-sort-by--wrapper legend.h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
