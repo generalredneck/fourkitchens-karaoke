@@ -1,0 +1,17 @@
+uuid: 28eaf68a-5d90-4014-85ec-83ed5f70ab2b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  title: '[site:name]'
+  canonical_url: '[current-page:url]'
+  description: 'Sing your heart out with the Web Chefs®!'
+  image_src: /themes/custom/karaoke/sharing.png
+  apple_mobile_web_app_status_bar_style: '#35AA4E'
+  theme_color: '#35AA4E'
+  apple_mobile_web_app_capable: 'yes'
+  og_image: /themes/custom/karaoke/sharing.png
