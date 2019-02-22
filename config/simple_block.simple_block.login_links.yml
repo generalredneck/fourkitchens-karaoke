@@ -1,0 +1,11 @@
+uuid: f5a1a54b-1934-4afb-a39a-455b84ae2439
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: login_links
+title: 'Login Links'
+content:
+  value: "<p><a href='/user/password'>Lost password<a/></p>\r\n<p><a href='/user/register'>Create an account</a></p>"
+  format: basic_html
