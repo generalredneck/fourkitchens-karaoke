@@ -30,7 +30,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 709ede87-ac0f-44b2-97c9-d76d01b58bc0
+    uuid: 39656287-bc89-44cd-8f86-8e411239e9db
     alt: 'Dillo Chef'
     title: ''
     width: 244
