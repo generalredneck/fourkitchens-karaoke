@@ -7,6 +7,8 @@ config:
   xdebug: true
 tooling:
   drush:
-    cmd: "/app/vendor/drush --root=/app/web"
+    service: appserver
+    cmd: /app/vendor/bin/drush --root=/app/web
   drupal:
-    cmd: "/app/vendor/bin/drupal"
+    service: appserver
+    cmd: /app/vendor/bin/drupal
