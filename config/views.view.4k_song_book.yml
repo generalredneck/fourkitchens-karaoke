@@ -240,7 +240,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Artist
+          label: 'Artist '
           exclude: false
           alter:
             alter_text: false
@@ -312,7 +312,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Song
+          label: 'Song '
           exclude: false
           alter:
             alter_text: false
