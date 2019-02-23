@@ -2,7 +2,7 @@ global:
   css:
     theme:
       dist/style.css: {}
-      "https://cloud.typography.com/7738032/7783592/css/fonts.css":
+      "https://cloud.typography.com/7738032/7647212/css/fonts.css":
         { type: external }
 
 main-menu:
