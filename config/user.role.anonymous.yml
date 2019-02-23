@@ -19,3 +19,4 @@ permissions:
   - 'view published song entities'
   - 'view published song request entities'
   - 'view published venue entities'
+  - 'view unpublished song request entities'
