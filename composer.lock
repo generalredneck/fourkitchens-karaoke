@@ -2803,12 +2803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git",
-                "reference": "4fd87bba40d95dcf226682767db449c5de17b2fc"
+                "reference": "16c87b9fda186fec9422182e16eb512d579be1a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/4fd87bba40d95dcf226682767db449c5de17b2fc",
-                "reference": "4fd87bba40d95dcf226682767db449c5de17b2fc",
+                "url": "https://api.github.com/repos/generalredneck/OpenKJ-Drupal-Integration/zipball/16c87b9fda186fec9422182e16eb512d579be1a5",
+                "reference": "16c87b9fda186fec9422182e16eb512d579be1a5",
                 "shasum": ""
             },
             "require": {
@@ -2828,7 +2828,7 @@
                 "issues": "https://www.drupal.org/project/issues/openkj",
                 "source": "http://cgit.drupalcode.org/openkj"
             },
-            "time": "2019-02-22T21:55:16+00:00"
+            "time": "2019-02-27T22:19:28+00:00"
         },
         {
             "name": "drupal/r4032login",

@@ -1,0 +1,10 @@
+uuid: bfef01bf-f371-43be-9bbc-686b00d9643f
+langcode: en
+status: true
+dependencies: {  }
+id: guest_singer
+label: 'Guest Singer'
+weight: -8
+is_admin: null
+permissions:
+  - 'change singers alias'

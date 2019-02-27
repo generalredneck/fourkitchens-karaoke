@@ -1,0 +1,14 @@
+uuid: 49e07071-d080-4ca4-ab5f-a66d89e52720
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.guest_singer
+  module:
+    - user
+id: user_remove_role_action.guest_singer
+label: 'Remove the Guest Singer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: guest_singer

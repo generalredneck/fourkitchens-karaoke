@@ -1,0 +1,14 @@
+uuid: 270ae775-1299-47ec-ab10-50e034abef99
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.guest_singer
+  module:
+    - user
+id: user_add_role_action.guest_singer
+label: 'Add the Guest Singer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: guest_singer
