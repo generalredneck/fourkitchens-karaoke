@@ -6,7 +6,7 @@ _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Anonymous user'
-weight: 0
+weight: -10
 is_admin: false
 permissions:
   - 'access comments'
@@ -19,3 +19,4 @@ permissions:
   - 'view published song entities'
   - 'view published song request entities'
   - 'view published venue entities'
+  - 'view unpublished song request entities'
