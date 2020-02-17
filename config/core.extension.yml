@@ -26,6 +26,7 @@ module:
   image: 0
   kint: 0
   link: 0
+  login_emailusername: 0
   menu_ui: 0
   metatag: 0
   metatag_dc: 0
@@ -33,7 +34,6 @@ module:
   metatag_mobile: 0
   metatag_open_graph: 0
   node: 0
-  openid_connect: 0
   openkj: 0
   options: 0
   page_cache: 0
