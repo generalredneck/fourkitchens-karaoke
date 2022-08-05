@@ -14,24 +14,23 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.0.20",
-        "cweagans/composer-patches": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.1",
-        "drupal/admin_toolbar": "^2.0",
-        "drupal/better_exposed_filters": "^3.0@alpha",
-        "drupal/bootstrap": "~3.0",
-        "drupal/config_direct_save": "^1.0",
-        "drupal/config_installer": "^1.0",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.1.1",
+        "drupal/better_exposed_filters": "^4.1",
+        "drupal/config_direct_save": "^2.0",
         "drupal/console": "^1",
-        "drupal/core-recommended": "^8",
-        "drupal/devel": "^2.0",
-        "drupal/login_emailusername": "^1.1",
+        "drupal/core-composer-scaffold": "^8.9",
+        "drupal/core-recommended": "^8.9",
+        "drupal/devel": "^4.0.1",
+        "drupal/login_emailusername": "^1.2",
         "drupal/metatag": "^1.7",
-        "drupal/openid_connect": "^1.0@beta",
+        "drupal/openid_connect": "^1.2",
         "drupal/openkj": "dev-8.x-1.x",
-        "drupal/r4032login": "^1.1",
+        "drupal/r4032login": "^2.1",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
+        "drupal/upgrade_status": "^3.14",
         "drupal/views_ajax_history": "1.x-dev",
         "drupal/views_bootstrap": "~3.1",
         "drupal/views_infinite_scroll": "^1.5",
@@ -40,7 +39,7 @@
         "fourkitchens/emulsify": "^3.1",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.2",
@@ -117,6 +116,9 @@
             "export-configuration": "drush config-export --yes"
         },
         "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
             "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
             "includes": [
                 "sites/default/default.services.pantheon.preproduction.yml",
@@ -154,7 +156,15 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.4"
+        },
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "wikimedia/composer-merge-plugin": true,
+            "drupal/console-extend-plugin": true,
+            "rvtraveller/qs-composer-installer": true
         }
     }
 }
