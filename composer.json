@@ -76,7 +76,6 @@
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
         "build-theme": "./scripts/composer/prepare-theme.sh web/themes/custom/karaoke",
         "post-install-cmd": [
-            "@build-theme",
             "@drupal-scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
