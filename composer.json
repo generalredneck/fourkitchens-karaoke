@@ -37,6 +37,7 @@
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "^10",
         "fourkitchens/emulsify": "^3.1",
+        "fourkitchens/project_ci": "^0.2.0",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "wikimedia/composer-merge-plugin": "^2.0"

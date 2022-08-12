@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "520ee24277ba164d62e084da04b5af3d",
+    "content-hash": "d48ef77d5ac93e3e17ad809261b6f4ee",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4158,6 +4158,35 @@
                 "source": "https://github.com/fourkitchens/emulsify/tree/develop"
             },
             "time": "2018-12-15T04:46:36+00:00"
+        },
+        {
+            "name": "fourkitchens/project_ci",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fourkitchens/project_ci.git",
+                "reference": "02f110c24e0f8f9ed74d8d2b259667a765839708"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fourkitchens/project_ci/zipball/02f110c24e0f8f9ed74d8d2b259667a765839708",
+                "reference": "02f110c24e0f8f9ed74d8d2b259667a765839708",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Allan Chappell",
+                    "email": "allan@fourkitchens.com"
+                }
+            ],
+            "description": "Scripts to help aid in deployment for sites.",
+            "support": {
+                "issues": "https://github.com/fourkitchens/project_ci/issues",
+                "source": "https://github.com/fourkitchens/project_ci/tree/0.2.0"
+            },
+            "time": "2022-03-25T23:35:39+00:00"
         },
         {
             "name": "grasmash/expander",
