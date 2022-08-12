@@ -7,8 +7,10 @@
     "test": "tests"
   },
   "scripts": {
+    "setup": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "theme": "cd ./web/themes/custom/karaoke && yarn start"
+    "theme": "cd ./web/themes/custom/karaoke && npm install",
+    "build": "lando start && lando composer install && lando drush updb -y && lando drush cr && lando drush uli"
   },
   "repository": {
     "type": "git",
