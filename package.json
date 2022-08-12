@@ -10,7 +10,9 @@
     "setup": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "theme": "cd ./web/themes/custom/karaoke && npm install",
-    "build": "lando start && lando composer install && lando drush updb -y && lando drush cr && lando drush uli"
+    "build": "lando start && npm run get-db && lando composer install && lando drush updb -y && lando drush cr && lando drush uli",
+    "get-db": "lando pull --code=none --files=none --database=pr-5",
+    "refresh": "lando composer install && lando drush updb -y && lando drush cim -y && lando drush cr"
   },
   "repository": {
     "type": "git",
