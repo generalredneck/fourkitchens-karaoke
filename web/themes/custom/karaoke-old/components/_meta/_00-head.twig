@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+  <head>
+    <title>
+      {{ title }}</title>
+    <meta charset="UTF-8">
+      <meta content="width=device-width" name="viewport"/>
+      <link href="https://cloud.typography.com/7738032/7783592/css/fonts.css" rel="stylesheet" type="text/css"/>
+      <link href="../../../../dist/style.css?{{ cacheBuster }}" media="all" rel="stylesheet"/>
+      <!-- Drupal-specific usage -->
+      <!-- example using symlinking -->
+      <!-- cd web/themes/custom/karaoke/components/js -->
+      <!-- ln -s ../../../../../core/assets/vendor/domready/ready.min.js ./ -->
+      <!-- ln -s ../../../../../core/misc/drupal.js ./ -->
+      <!-- UNCOMMENT AS NECESSARY -->
+      <!-- <script src="../../js/ready.min.js"></script> -->
+      <!-- <script src="../../js/drupal.js"></script> -->
+      <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {{ patternLabHead | raw }}
+      <!-- End Pattern Lab -->
+    </head>
+    <body
+      class="{{ bodyClass }}">
+      <!-- for js not found errors in Pattern Lab -->
+      <div class="visually-hidden">
+        <div class="tabs" id="tabs"></div>
+      </div>
+    

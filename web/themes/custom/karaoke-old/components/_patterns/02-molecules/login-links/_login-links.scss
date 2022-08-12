@@ -1,0 +1,16 @@
+#block-loginlinks {
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+  max-width: 300px;
+
+  a {
+    width: 125px;
+    margin: 25px;
+    color: $gray-lighter;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}

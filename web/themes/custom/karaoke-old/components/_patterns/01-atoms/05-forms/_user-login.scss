@@ -1,0 +1,22 @@
+.user-login-form,
+.openid-connect-login-form {
+  input[type="submit"] {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    text-align: center;
+  }
+}
+
+.user-login-form {
+  input[type="submit"] {
+    margin-bottom: 1rem;
+  }
+}
+
+.openid-connect-login-form {
+  text-align: center;
+}
