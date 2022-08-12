@@ -10,7 +10,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git"
+            "url": "https://git.drupalcode.org/sandbox/generalredneck-3017533.git"
         }
     ],
     "require": {
