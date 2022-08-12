@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - karaoke
+    - kitchen_karaoke
 id: views_block__recent_requests_recent_requests_block
-theme: karaoke
+theme: kitchen_karaoke
 region: content
 weight: -4
 provider: null
