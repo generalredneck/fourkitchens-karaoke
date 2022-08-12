@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
 uuid: ef1c7967-b986-494d-ab7a-24fffe9eb6f5
 name: 'Four Kitchens Karaoke'
 mail: generalredneck@gmail.com
@@ -8,8 +11,5 @@ page:
   front: /song-book
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 mail_notification: ''
