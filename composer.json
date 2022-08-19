@@ -99,6 +99,12 @@
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
             "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
