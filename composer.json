@@ -40,6 +40,7 @@
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "^10",
         "fourkitchens/project_ci": "^0.2.0",
+        "pantheon-systems/drupal-integrations": "^9",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "wikimedia/composer-merge-plugin": "^2.0"
@@ -120,10 +121,8 @@
             "locations": {
                 "web-root": "web/"
             },
-            "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
-            "includes": [
-                "sites/default/default.services.pantheon.preproduction.yml",
-                "sites/default/settings.pantheon.php"
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
             ],
             "excludes": [
                 ".csslintrc",
