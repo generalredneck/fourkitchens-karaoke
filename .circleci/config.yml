@@ -270,6 +270,7 @@ jobs:
       - run:
           name: deploy to Pantheon
           command: |
+            printenv
             if [ -f "./.circleci/scripts/deploy" ]; then
               ./.circleci/scripts/deploy
             else
