@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "891deb3eea3ee2774295ad91fd6fb3b0",
+    "content-hash": "dd49bb2311fc47cbb5c95e8ba4c52ceb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4113,18 +4113,19 @@
         },
         {
             "name": "fourkitchens/project_ci",
-            "version": "0.2.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/project_ci.git",
-                "reference": "02f110c24e0f8f9ed74d8d2b259667a765839708"
+                "reference": "01442bbad0e4b5d85f92240b9e49cfc5f2f142a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/project_ci/zipball/02f110c24e0f8f9ed74d8d2b259667a765839708",
-                "reference": "02f110c24e0f8f9ed74d8d2b259667a765839708",
+                "url": "https://api.github.com/repos/fourkitchens/project_ci/zipball/01442bbad0e4b5d85f92240b9e49cfc5f2f142a6",
+                "reference": "01442bbad0e4b5d85f92240b9e49cfc5f2f142a6",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
@@ -4136,9 +4137,9 @@
             "description": "Scripts to help aid in deployment for sites.",
             "support": {
                 "issues": "https://github.com/fourkitchens/project_ci/issues",
-                "source": "https://github.com/fourkitchens/project_ci/tree/0.2.0"
+                "source": "https://github.com/fourkitchens/project_ci/tree/main"
             },
-            "time": "2022-03-25T23:35:39+00:00"
+            "time": "2022-08-09T23:35:14+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -13161,6 +13162,7 @@
         "drupal/openkj": 20,
         "drupal/simple_block": 10,
         "drupal/views_ajax_history": 20,
+        "fourkitchens/project_ci": 20,
         "musixmatch/musixmatch-sdk-php": 20
     },
     "prefer-stable": true,

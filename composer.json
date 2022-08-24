@@ -40,7 +40,7 @@
         "drupal/views_infinite_scroll": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "^10",
-        "fourkitchens/project_ci": "^0.2.0",
+        "fourkitchens/project_ci": "dev-main",
         "pantheon-systems/drupal-integrations": "^9",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
