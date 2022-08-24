@@ -10,49 +10,46 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/generalredneck/OpenKJ-Drupal-Integration.git"
+            "url": "https://git.drupalcode.org/sandbox/generalredneck-3017533.git"
         }
     ],
     "require": {
-        "composer/installers": "^1.0.20",
-        "cweagans/composer-patches": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.1",
-        "drupal/admin_toolbar": "^2.0",
-        "drupal/better_exposed_filters": "^3.0@alpha",
-        "drupal/bootstrap": "~3.0",
-        "drupal/config_direct_save": "^1.0",
-        "drupal/config_installer": "^1.0",
-        "drupal/console": "^1",
-        "drupal/core-recommended": "^8",
-        "drupal/devel": "^2.0",
-        "drupal/login_emailusername": "^1.1",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.1.1",
+        "drupal/better_exposed_filters": "^5.1",
+        "drupal/components": "^2.4",
+        "drupal/config_direct_save": "^2.0",
+        "drupal/core": "9.4.5",
+        "drupal/core-composer-scaffold": "9.4.5",
+        "drupal/core-recommended": "9.4.5",
+        "drupal/devel": "^4.0.1",
+        "drupal/emulsify_twig": "^2.1",
+        "drupal/gin": "^3.0@beta",
+        "drupal/login_emailusername": "^1.2",
         "drupal/metatag": "^1.7",
-        "drupal/openid_connect": "^1.0@beta",
+        "drupal/openid_connect": "^1.2",
         "drupal/openkj": "dev-8.x-1.x",
-        "drupal/r4032login": "^1.1",
+        "drupal/r4032login": "^2.1",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
+        "drupal/unified_twig_ext": "^1.0",
+        "drupal/upgrade_status": "^3.14",
         "drupal/views_ajax_history": "1.x-dev",
         "drupal/views_bootstrap": "~3.1",
         "drupal/views_infinite_scroll": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
-        "drush/drush": "^9.5",
-        "fourkitchens/emulsify": "^3.1",
+        "drush/drush": "^10",
+        "fourkitchens/project_ci": "^0.2.0",
+        "pantheon-systems/drupal-integrations": "^9",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
-        "mikey179/vfsstream": "^1.2",
-        "behat/behat": "3.*",
-        "behat/mink": "^1.7",
-        "behat/mink-extension": "^2.2",
-        "behat/mink-goutte-driver": "^1.2",
-        "jcalderonzumba/gastonjs": "^1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
-        "drupal/drupal-extension": "^3.1",
-        "phpunit/phpunit": "^4.8",
-        "symfony/css-selector": "^2.8"
+        "drupal/core-dev": "^9",
+        "drupal/twig_xdebug": "^1.2",
+        "phpcompatibility/php-compatibility": "^9.3"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -76,7 +73,6 @@
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
         "build-theme": "./scripts/composer/prepare-theme.sh web/themes/custom/karaoke",
         "post-install-cmd": [
-            "@build-theme",
             "@drupal-scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
@@ -98,6 +94,12 @@
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
             "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
@@ -117,10 +119,11 @@
             "export-configuration": "drush config-export --yes"
         },
         "drupal-scaffold": {
-            "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
-            "includes": [
-                "sites/default/default.services.pantheon.preproduction.yml",
-                "sites/default/settings.pantheon.php"
+            "locations": {
+                "web-root": "web/"
+            },
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
             ],
             "excludes": [
                 ".csslintrc",
@@ -154,7 +157,16 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.4"
+        },
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "wikimedia/composer-merge-plugin": true,
+            "drupal/console-extend-plugin": true,
+            "rvtraveller/qs-composer-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }

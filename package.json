@@ -7,8 +7,15 @@
     "test": "tests"
   },
   "scripts": {
+    "setup": "lando destroy -y && lando rebuild -y && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "theme": "cd ./web/themes/custom/karaoke && yarn start"
+    "theme-build": "cd ./web/themes/custom/kitchen_karaoke && npm install && npm run build",
+    "theme": "cd ./web/themes/custom/kitchen_karaoke && npm run develop",
+    "build": "lando start && npm run get-db && npm run refresh",
+    "get-db": "lando pull --code=none --files=none --database=live",
+    "confim": "lando drush cim -y",
+    "confex": "lando drush cex -y",
+    "refresh": "lando composer install && lando drush updb -y && lando drush cim -y && npm run theme-build && lando drush cr && lando drush uli"
   },
   "repository": {
     "type": "git",

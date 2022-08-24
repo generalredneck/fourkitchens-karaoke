@@ -9,6 +9,8 @@ tooling:
   drush:
     service: appserver
     cmd: /app/vendor/bin/drush --root=/app/web
+    env:
+      DRUSH_OPTIONS_URI: "https://fourkitchens-karaoke.lndo.site"
   drupal:
     service: appserver
     cmd: /app/vendor/bin/drupal

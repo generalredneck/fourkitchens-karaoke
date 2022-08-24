@@ -1,7 +1,15 @@
 uuid: 22f84f4e-7edc-4f19-8d63-34b7e68cb88c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - rest.resource.openkj_api_resource
+  module:
+    - filter
+    - openkj
+    - rest
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -9,11 +17,8 @@ label: 'Anonymous user'
 weight: -10
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'restful post openkj_api_resource'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view published artist entities'
   - 'view published song entities'

@@ -18,61 +18,12 @@ base_table: song_request
 base_field: id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 6
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '⬅ Go Back'
-            next: 'Show More ➡'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-      row:
-        type: fields
+      title: 'Requested Today'
       fields:
         user_picture:
           id: user_picture
@@ -81,6 +32,7 @@ display:
           relationship: user_id
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -125,8 +77,10 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: 32x32
             image_link: ''
+            image_style: 32x32
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -137,7 +91,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         artist:
           id: artist
           table: song
@@ -145,6 +98,9 @@ display:
           relationship: song
           group_type: group
           admin_label: ''
+          entity_type: song
+          entity_field: artist
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -200,9 +156,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: song
-          entity_field: artist
-          plugin_id: field
         name_1:
           id: name_1
           table: song
@@ -210,6 +163,9 @@ display:
           relationship: song
           group_type: group
           admin_label: ''
+          entity_type: song
+          entity_field: name
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -265,9 +221,69 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: song
-          entity_field: name
-          plugin_id: field
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 6
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Show More ➡'
+            previous: '⬅ Go Back'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        title:
+          id: title
+          table: views
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: title
+          empty: true
+          title: 'No requests today'
+      sorts:
+        created:
+          id: created
+          table: song_request
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: song_request
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
       filters:
         created:
           id: created
@@ -276,6 +292,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: song_request
+          entity_field: created
+          plugin_id: date
           operator: '>'
           value:
             min: ''
@@ -290,17 +309,17 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -313,39 +332,22 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: song_request
-          entity_field: created
-          plugin_id: date
-      sorts:
-        created:
-          id: created
-          table: song_request
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: song_request
-          entity_field: created
-          plugin_id: date
-      title: 'Requested Today'
-      header: {  }
-      footer: {  }
-      empty:
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          title: 'No requests today'
-          plugin_id: title
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         song:
           id: song
@@ -354,10 +356,10 @@ display:
           relationship: none
           group_type: group
           admin_label: Song
-          required: true
           entity_type: song_request
           entity_field: song
           plugin_id: standard
+          required: true
         user_id:
           id: user_id
           table: song_request
@@ -365,14 +367,15 @@ display:
           relationship: none
           group_type: group
           admin_label: User
-          required: true
           entity_type: song_request
           entity_field: user_id
           plugin_id: standard
-      arguments: {  }
-      display_extenders: {  }
-      use_ajax: false
+          required: true
       css_class: recent-requests
+      use_ajax: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -382,9 +385,9 @@ display:
       tags:
         - 'config:field.storage.user.user_picture'
   recent_requests_block:
-    display_plugin: block
     id: recent_requests_block
     display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       display_extenders: {  }
