@@ -18,3 +18,7 @@ function fk_karaoke_custom_update_8100() {
     $file->save();
   }
 }
+
+function fk_karaoke_custom_update_8101() {
+  \Drupal::service('module_installer')->uninstall(['unified_twig_ext']);
+}
