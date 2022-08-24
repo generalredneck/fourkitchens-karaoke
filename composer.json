@@ -164,7 +164,8 @@
             "drupal/core-composer-scaffold": true,
             "wikimedia/composer-merge-plugin": true,
             "drupal/console-extend-plugin": true,
-            "rvtraveller/qs-composer-installer": true
+            "rvtraveller/qs-composer-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
