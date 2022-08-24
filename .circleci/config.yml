@@ -253,9 +253,6 @@ jobs:
       TERM: dumb
       # BUILD_TOOLS_VERSION: ^2.0.0-alpha4
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            -	c9:8b:3f:0e:10:3e:2c:e7:7c:c1:87:42:49:c6:cc:11
       - checkout
       - restore-project:
           workspace_root: << pipeline.parameters.artifact_workspace >>
