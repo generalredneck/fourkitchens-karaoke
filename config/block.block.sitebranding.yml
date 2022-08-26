@@ -1,0 +1,23 @@
+uuid: 465edbfc-948a-4fca-a47b-a73a662dec15
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kitchen_karaoke
+id: sitebranding
+theme: kitchen_karaoke
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
