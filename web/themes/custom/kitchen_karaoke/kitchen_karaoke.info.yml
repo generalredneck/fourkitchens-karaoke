@@ -7,7 +7,7 @@ core_version_requirement: ^8 || ^9
 libraries:
   - kitchen_karaoke/global
 ckeditor_stylesheets:
-  - dist/css/style.css
+  - dist/style.css
 regions:
   header: Header
   content: Content

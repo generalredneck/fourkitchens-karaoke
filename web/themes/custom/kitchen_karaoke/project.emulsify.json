@@ -1,7 +1,7 @@
 {
   "project": {
     "platform": "drupal",
-    "name": "kitchen karaoke\n",
+    "name": "kitchen karaoke",
     "machineName": "kitchen_karaoke"
   },
   "starter": {
