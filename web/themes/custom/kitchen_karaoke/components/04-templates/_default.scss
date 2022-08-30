@@ -11,10 +11,37 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
  * Remove this and uncomment Grid code below to use CSS Grid.
 */
 
+body {
+  background: $dark;
+  color: $white;
+  font-family: $font-body;
+  font-size: 16px;
+}
+
+// We should move this.
+#block-loginlinks {
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+  max-width: 300px;
+
+  a {
+    width: 125px;
+    margin: 25px;
+    color: $gray-lighter;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}
+
 .main {
   @include wrapper;
 
-  margin-bottom: 4em;
+  margin: 0 auto;
+  max-width: 500px;
+  display: block;
 
   @include large {
     display: flex;
