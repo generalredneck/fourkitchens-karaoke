@@ -25,19 +25,23 @@
  * @see template_preprocess_block()
  */
 #}
-<div {{ bem('block', (['recent-requests']))}}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{title_attributes.addClass('h2').addClass('recent-requests--h2')}}>
-      {% include "@atoms/images/icons/_icon.twig" with {
-        icon_name: 'music',
-        icon_base_class: 'recent-requests--icon' }
-      %}
-      {{ label }}
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-</div>
+{% set recentRequests__base_class = 'recent-requests' %}
+
+{% if recentRequests %}
+  <div {{ bem('block', (['recent-requests']))}}>
+    {{ title_prefix }}
+      {% if label %}
+        <h2{{title_attributes.addClass('h2').addClass('recent-requests--h2')}}>
+          {% include "@atoms/images/icons/_icon.twig" with {
+            icon_name: 'music',
+            icon_base_class: 'recent-requests--icon' }
+          %}
+          {{ label }}
+        </h2>
+      {% endif %}
+    {{ title_suffix }}
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+  </div>
+{% endif %}
