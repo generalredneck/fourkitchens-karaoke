@@ -41,7 +41,7 @@
       {% endif %}
     {{ title_suffix }}
       {% block content %}
-        {{  }}
+        {% include "@atoms/lists/song-request.twig" %}
       {% endblock %}
   </div>
 {% endif %}
