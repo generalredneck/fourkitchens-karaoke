@@ -13,10 +13,11 @@ module:
   components: 0
   config: 0
   config_direct_save: 0
+  config_filter: 0
+  config_split: 0
   contextual: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dynamic_page_cache: 0
   editor: 0
   emulsify_twig: 0
