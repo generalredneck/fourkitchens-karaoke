@@ -30,6 +30,10 @@ $settings['install_profile'] = 'standard';
 $config['openkj.settings']['api_key'] = '12345';
 $config['openkj.settings']['default_venue'] = '1';
 
+// configuration split
+$config['config_split.config_split.dev_split']['status'] = TRUE;
+
+
 /**
  * If there is a local settings file, then include it
  */
