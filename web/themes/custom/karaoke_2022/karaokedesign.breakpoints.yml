@@ -1,0 +1,15 @@
+karaokedesign.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+karaokedesign.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+karaokedesign.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+karaokedesign.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+karaokedesign.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
