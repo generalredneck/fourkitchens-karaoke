@@ -1,0 +1,30 @@
+uuid: a526d51d-9fd1-4116-8e9c-758cb4a1bf11
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_requests
+  module:
+    - system
+    - views
+  theme:
+    - karaokedesign
+id: karaokedesign_views_block__recent_requests_recent_requests_block
+theme: karaokedesign
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:recent_requests-recent_requests_block'
+settings:
+  id: 'views_block:recent_requests-recent_requests_block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'
