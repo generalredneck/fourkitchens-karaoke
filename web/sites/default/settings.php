@@ -32,8 +32,8 @@ $config['openkj.settings']['default_venue'] = '1';
 
 // configuration split
 if ($settings['server_environment'] === 'live') {
-  $config['config_split.config_split.development']['status'] = FALSE;
-} else { $config['config_split.config_split.development']['status'] = TRUE; }
+  $config['config_split.config_split.development']['status'] = FALSE;}
+else { $config['config_split.config_split.development']['status'] = TRUE; }
 
 
 /**
