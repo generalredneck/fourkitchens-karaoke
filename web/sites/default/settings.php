@@ -31,7 +31,9 @@ $config['openkj.settings']['api_key'] = '12345';
 $config['openkj.settings']['default_venue'] = '1';
 
 // configuration split
-$config['config_split.config_split.dev_split']['status'] = TRUE;
+if ($settings['server_environment'] === 'live') {
+  $config['config_split.config_split.development']['status'] = FALSE;
+} else { $config['config_split.config_split.development']['status'] = TRUE; }
 
 
 /**
