@@ -63,10 +63,10 @@ $config['openkj.settings']['default_venue'] = '1';
 
 // Configuration split.
 if ($settings['server_environment'] === 'local') {
-    $config['config_split.config_split.development']['status'] = true;
+    $config['config_split.config_split.dev_split']['status'] = true;
 } 
 else {
-    $config['config_split.config_split.development']['status'] = false;
+    $config['config_split.config_split.dev_split']['status'] = false;
 }
 
 
