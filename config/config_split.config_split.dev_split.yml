@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: dev_split
 label: 'Dev Split'
-description: ''
+description: 'Settings we want for development (local) environment only.'
 weight: 0
 folder: ../config/dev_split
 module:
@@ -13,6 +13,7 @@ theme: {  }
 blacklist:
   - devel.settings
   - devel.toolbar.settings
+  - system.logging
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
