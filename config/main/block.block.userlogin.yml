@@ -1,0 +1,25 @@
+uuid: ef44fe50-ee84-4465-be31-6964dba91e74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - kitchen_karaoke
+id: userlogin
+theme: kitchen_karaoke
+region: footer
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
