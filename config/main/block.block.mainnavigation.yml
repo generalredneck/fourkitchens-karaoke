@@ -1,0 +1,25 @@
+uuid: bc2d1389-fb3b-4c6b-8bf2-accfd86d0d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - kitchen_karaoke
+id: mainnavigation
+theme: kitchen_karaoke
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
