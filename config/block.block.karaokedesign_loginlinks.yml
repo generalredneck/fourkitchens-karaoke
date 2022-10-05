@@ -1,0 +1,27 @@
+uuid: d150f5f9-5cc4-488d-b00f-a5f0381cd7d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.login_links
+  module:
+    - simple_block
+    - system
+  theme:
+    - karaokedesign
+id: karaokedesign_loginlinks
+theme: karaokedesign
+region: content
+weight: 1
+provider: null
+plugin: 'simple_block:login_links'
+settings:
+  id: 'simple_block:login_links'
+  label: 'Login Links'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login
