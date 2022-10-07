@@ -1,0 +1,23 @@
+uuid: de072112-9ee7-401b-880d-95ef27211932
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - karaokedesign
+id: karaokedesign_sitebranding
+theme: karaokedesign
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
