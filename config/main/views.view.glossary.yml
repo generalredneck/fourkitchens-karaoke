@@ -352,7 +352,9 @@ display:
       use_ajax: true
       header: {  }
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -416,7 +418,9 @@ display:
         options: {  }
       defaults:
         arguments: false
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
       displays:
         default: default
         page_1: page_1
@@ -440,7 +444,9 @@ display:
       query:
         type: views_query
         options: {  }
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
       path: glossary
       menu:
         type: normal

@@ -337,9 +337,13 @@ display:
               autosubmit: true
               autosubmit_exclude_textfield: true
               autosubmit_hide: false
+              input_required: false
+              text_input_required: 'Select any filter and click on Apply to see results'
+              text_input_required_format: basic_html
               allow_secondary: false
               secondary_label: 'Advanced options'
             sort:
+              plugin_id: bef
               advanced:
                 combine: false
                 combine_rewrite: ''
@@ -348,14 +352,16 @@ display:
                 collapsible: false
                 collapsible_label: 'Sort options'
                 is_secondary: false
-              bef_format: bef
-            search_api_fulltext:
-              bef_format: default
-              more_options:
-                is_secondary: false
-                placeholder_text: 'Song or Artist…'
-                rewrite:
-                  filter_rewrite_values: ''
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  collapsible: false
+                  is_secondary: false
+                  placeholder_text: 'Song or Artist…'
+                  rewrite:
+                    filter_rewrite_values: ''
+                  sort_options: false
       access:
         type: none
         options: {  }
@@ -467,7 +473,9 @@ display:
       use_ajax: true
       header: {  }
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -484,7 +492,9 @@ display:
     position: 1
     display_options:
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
       path: song-book
     cache_metadata:
       max-age: -1
