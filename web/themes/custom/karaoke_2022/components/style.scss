@@ -6,6 +6,12 @@
 @import '~bootstrap/scss/mixins/banner';
 @include bsBanner('');
 
+// Components
+@import '00-base/**/*.scss';
+@import '01-atoms/**/*.scss';
+@import '02-molecules/menus/main-menu/**/*.scss';
+@import '05-pages/**/*.scss';
+
 // scss-docs-start import-stack
 // Configuration
 @import '~bootstrap/scss/functions';
@@ -54,9 +60,3 @@
 // Utilities
 @import '~bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
-
-// Components
-@import '00-base/**/*.scss';
-@import '01-atoms/**/*.scss';
-@import '02-molecules/menus/main-menu/**/*.scss';
-@import '05-pages/**/*.scss';
