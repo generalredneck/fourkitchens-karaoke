@@ -33,6 +33,8 @@
         "drupal/openid_connect": "^1.2",
         "drupal/openkj": "dev-8.x-1.x",
         "drupal/r4032login": "^2.1",
+        "drupal/search_api_opensolr": "^2.1",
+        "drupal/search_api_solr": "^4.2",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
         "drupal/unified_twig_ext": "^1.0",

@@ -1,0 +1,64 @@
+<div class="wrapper">
+  <div class="container-sm " style="max-width: 600px">
+    <main class="">
+      <h1 class="mb-5">Karaoke Time!</h1>
+      {% include "../../component-library/requested-today/requested-today.twig" %}
+      <form>
+        <div class="mb-3">
+          <label for="songSearch" class="form-label">Search by Song or Artist</label>
+          <input type="text" class="form-control form-control-lg" id="songSearch" aria-describedby="songHelp" placeholder="Enter a song or artist" value="Brittney Spears">
+        </div>
+        <div class="mb-3">
+          <label for="songSort" class="form-label">Sort</label>
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="songSort">
+            <option selected>Artist</option>
+            <option value="1">Song</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 btn-lg">Search</button>
+      </form>
+
+      <div class="mt-5">
+        <h2>Search Results</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p class="mb-0">Artist &amp; Song</p>
+            <p class="h3 text-primary">Alan Jackson</p>
+            <p class="mb-3 text-primary">Gonna Come Back As A Country Song</p>
+            <button type="button" class="btn btn-primary btn-sm mb-2">Request</button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-0">Artist &amp; Song</p>
+            <p class="h3 text-primary">Alan Jackson</p>
+            <p class="mb-3 text-primary">Gonna Come Back As A Country Song</p>
+            <button type="button" class="btn btn-primary btn-sm mb-2">Request</button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-0">Artist &amp; Song</p>
+            <p class="h3 text-primary">Alan Jackson</p>
+            <p class="mb-3 text-primary">Gonna Come Back As A Country Song</p>
+            <button type="button" class="btn btn-primary btn-sm mb-2">Request</button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-0">Artist &amp; Song</p>
+            <p class="h3 text-primary">Alan Jackson</p>
+            <p class="mb-3 text-primary">Gonna Come Back As A Country Song</p>
+            <button type="button" class="btn btn-primary btn-sm mb-2">Request</button>
+          </li>
+          <li class="list-group-item">
+            <p class="mb-0">Artist &amp; Song</p>
+            <p class="h3 text-primary">Alan Jackson</p>
+            <p class="mb-3 text-primary">Gonna Come Back As A Country Song</p>
+            <button type="button" class="btn btn-primary btn-sm mb-2">Request</button>
+          </li>
+        </ul>
+      
+      </div>
+    </main>
+  </div>
+  <footer class="p-3 pt-5 position-relative" style="z-index: 10;">
+    Made with 💚 by the Web Chefs.
+  </footer>
+  {% include "../bkg/bkg.twig" %}
+</div>
