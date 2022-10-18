@@ -130,3 +130,6 @@ Thumbs.db
 
 # Lando
 .lando.local.yml
+
+# Local Development Services
+*development.services.yml
