@@ -5,10 +5,6 @@ $main-menu-medium: $medium;
 .main-nav {
   display: none;
 
-  @include medium {
-    display: block;
-  }
-
   &--open {
     background-color: clr(background);
     display: block;
