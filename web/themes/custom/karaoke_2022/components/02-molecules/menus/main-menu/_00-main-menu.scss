@@ -28,6 +28,7 @@ $main-menu-medium: $medium;
   border-bottom: 1px solid;
   position: relative;
   z-index: 10;
+  background-color: inherit;
 
   @include medium {
     border-bottom: none;
