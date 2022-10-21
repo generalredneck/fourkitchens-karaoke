@@ -1,0 +1,20 @@
+uuid: d5d78457-519d-45a9-b8ea-da52eb0df2db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - karaokedesign
+id: mainpagecontent
+theme: karaokedesign
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
