@@ -338,10 +338,10 @@ display:
               autosubmit_exclude_textfield: true
               autosubmit_hide: false
               input_required: false
-              text_input_required: 'Select any filter and click on Apply to see results'
-              text_input_required_format: basic_html
               allow_secondary: false
               secondary_label: 'Advanced options'
+              text_input_required: 'Select any filter and click on Apply to see results'
+              text_input_required_format: basic_html
             sort:
               plugin_id: bef
               advanced:
@@ -356,12 +356,12 @@ display:
               search_api_fulltext:
                 plugin_id: default
                 advanced:
-                  collapsible: false
-                  is_secondary: false
+                  sort_options: false
                   placeholder_text: 'Song or Artist…'
                   rewrite:
                     filter_rewrite_values: ''
-                  sort_options: false
+                  collapsible: false
+                  is_secondary: false
       access:
         type: none
         options: {  }
