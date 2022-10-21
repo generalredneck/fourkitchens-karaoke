@@ -3,6 +3,9 @@
   text-align: center;
   position: relative;
   margin-bottom: 4.5rem;
+  max-width: 1224px;
+  margin: auto;
+  margin-top: 2em;
 
   &__branding img {
     display: inline;
@@ -10,10 +13,9 @@
     filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
     transition: all 0.25s;
     max-width: 300px;
+    margin-left: 1.5em;
   }
 }
-
-
 
 .menu-toggle {
   color: $white;
@@ -29,4 +31,17 @@
     opacity: 0.8;
     transform: scale(1.35);
   }
+}
+
+.header__primary {
+  display: flex;
+  @media (max-width: 375px) {
+    flex-wrap: wrap;
+
+  }
+}
+
+.header__menu {
+  width: 100%;
+  margin-top: 1em;
 }

@@ -2,10 +2,6 @@
 .toggle-expand {
   @include link;
 
-  @include medium {
-    display: none;
-  }
-
   display: inline-block;
   padding: $space;
   text-decoration: none;
@@ -29,6 +25,7 @@
 
 /* SVG icon */
 .toggle-expand__icon {
+  fill: $white;
   height: 3rem;
   width: 3rem;
   margin: 0 auto;

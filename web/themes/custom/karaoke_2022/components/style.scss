@@ -15,6 +15,7 @@
 @import '00-base/00-defaults/_03-mixins.scss';
 @import '01-atoms/buttons/_buttons.scss';
 @import '01-atoms/lists/list';
+@import '03-organisms/site/site-header/site-header';
 
 // Configuration
 @import '~bootstrap/scss/functions';
@@ -63,3 +64,6 @@
 // Utilities
 @import '~bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
+
+// To remove later, temporary bootstrap hack
+// @import './bootstrap-hack/bootstrap-custom.scss';
