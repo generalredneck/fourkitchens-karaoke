@@ -1,18 +1,18 @@
 {% if not attributes %}
-<div class="form-item">
-  <label for="select" class="h4">Select Dropdown</label>
-  <div class="form-item__dropdown">
-    <select class="form-item__select" id="select">
-      <optgroup label="Whatever">
-{% endif %}
+  <div class="">
+    <label for="select" class="mb-3">Select Dropdown</label>
+    <div class="">
+      <select class="form-select form-select-lg mb-3" id="select">
+        <optgroup label="Whatever">
+        {% endif %}
         {% for selection in select %}
           {% include "@atoms/forms/select/_select-item.twig" with {
             select_item: selection.title
           } %}
         {% endfor %}
-{% if not attributes %}
-      </optgroup>
-    </select>
+        {% if not attributes %}
+        </optgroup>
+      </select>
+    </div>
   </div>
-</div>
 {% endif %}

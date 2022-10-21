@@ -1,0 +1,5 @@
+button_content: 'Coin Button'
+button_url: '#'
+button_modifiers:
+  - 'alt'
+button_image: '../../../images/mario-coin.gif'
