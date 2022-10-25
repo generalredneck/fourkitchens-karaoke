@@ -5,7 +5,6 @@
   display: inline-block;
   padding: $space;
   text-decoration: none;
-  width: 100%;
 
   /* See main-menu.js */
   &--open {
@@ -34,6 +33,7 @@
 .toggle-expand__open {
   display: inline-block;
   text-align: center;
+
 
   .toggle-expand--open & {
     display: none;
