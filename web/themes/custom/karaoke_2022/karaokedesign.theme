@@ -4,3 +4,12 @@
  * @file
  * Functions to support theming.
  */
+
+function karaokedesign_preprocess_bef_radios(array &$variables) {
+
+  foreach($variables['element']['#options'] as $key => $radio) {
+    $variables['radios'][] = [
+      'title' => $radio
+    ];
+  }
+}
