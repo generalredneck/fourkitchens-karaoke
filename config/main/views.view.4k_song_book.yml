@@ -484,7 +484,8 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-      tags: {  }
+      tags:
+        - 'config:search_api.index.song_index'
   browse_artist:
     id: browse_artist
     display_title: 'Browse By Artist'
@@ -578,7 +579,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
       tags:
         - 'config:search_api.index.song_index'
   browse_song:
@@ -661,7 +661,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
       tags:
         - 'config:search_api.index.song_index'
   song_book_page:
@@ -683,4 +682,6 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-      tags: {  }
+      tags:
+        - 'config:facets.facet.song_name_test'
+        - 'config:search_api.index.song_index'
