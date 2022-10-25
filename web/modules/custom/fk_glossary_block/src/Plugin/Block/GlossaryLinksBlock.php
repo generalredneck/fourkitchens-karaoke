@@ -48,6 +48,7 @@ class GlossaryLinksBlock extends BlockBase
         '#attached' => [
         'library' => [
           'fk_glossary_block/drupal.fk_glossary_block.facet_css',
+          'fk_glossary_block/drupal.fk_glossary_block.facet_js'
         ],
         ]
         ];
