@@ -36,12 +36,12 @@
   transition: background-color .35s ease;
 }
 
-#block-glossarylinks li a:hover {
+#block-glossarylinks li a:not(.active):hover {
   background: #ffb400;
-  color: #ffffff;
   color: rgb(22, 26, 24);
 }
 
 #block-glossarylinks li a.active {
   background-color: #091b13;
+  cursor: default;
 }
