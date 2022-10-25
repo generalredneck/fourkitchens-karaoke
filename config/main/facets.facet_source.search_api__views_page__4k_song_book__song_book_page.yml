@@ -1,0 +1,9 @@
+uuid: 10ef9ec3-fb67-4e0b-97f2-2d6d1e956d76
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__4k_song_book__song_book_page
+name: 'search_api:views_page__4k_song_book__song_book_page'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

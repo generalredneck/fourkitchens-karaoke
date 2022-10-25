@@ -1,0 +1,29 @@
+.google_sso {
+    display: inline-block;
+    input {
+        padding: 1rem 1rem 1rem 5rem;
+        border-radius: 6px;
+        border: transparent;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 4rem;
+        height: 100%;
+        background-image: url('/themes/custom/karaoke_2022/images/google_logo.svg');
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        background-position: center;
+        background-color: #141c12;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        pointer-events: none;
+    }
+}
+.openid-connect-login-form form, .openid-connect-login-form {
+    position: relative;
+}
+.openid-connect-login-form {
+    overflow: hidden;
+}

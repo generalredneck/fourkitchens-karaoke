@@ -13,3 +13,12 @@ function karaokedesign_preprocess_bef_radios(array &$variables) {
     ];
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function karaokedesign_form_openid_connect_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $google_form            = &$form['openid_connect_client_google_login'];
+  $google_form['#value']  = 'Sign in with 4K email';
+  $google_form['#prefix'] = '<div class="google_sso">';
+}

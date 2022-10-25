@@ -1,0 +1,11 @@
+drupal.fk_glossary_block.facet_css:
+  version: VERSION
+  css:
+    theme:
+      css/search_api_glossary.facet.css: {}
+drupal.fk_glossary_block.facet_js:
+  version: VERSION
+  js:
+    js/fk_glossary_block.js: {}
+  dependencies:
+    - core/jquery

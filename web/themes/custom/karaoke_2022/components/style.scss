@@ -65,5 +65,4 @@
 @import '~bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
 
-// To remove later, temporary bootstrap hack
-// @import './bootstrap-hack/bootstrap-custom.scss';
+@import '03-organisms/google_sso/google_sso_login_button.scss';

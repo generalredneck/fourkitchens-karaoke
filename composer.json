@@ -7,32 +7,29 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/sandbox/generalredneck-3017533.git"
         }
     ],
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^3.1.1",
+        "drupal/admin_toolbar": "^3.2.1",
         "drupal/better_exposed_filters": "^5.1",
         "drupal/components": "^2.4",
         "drupal/config_direct_save": "^2.0",
         "drupal/config_ignore": "^2.3",
         "drupal/config_split": "^1.9",
-        "drupal/core": "9.4.5",
-        "drupal/core-composer-scaffold": "9.4.5",
-        "drupal/core-recommended": "9.4.5",
+        "drupal/core": "9.4.8",
+        "drupal/core-composer-scaffold": "9.4.8",
+        "drupal/core-recommended": "9.4.8",
         "drupal/devel": "^4.0.1",
         "drupal/emulsify_twig": "^2.1",
         "drupal/gin": "^3.0@beta",
         "drupal/login_emailusername": "^1.2",
         "drupal/metatag": "^1.7",
         "drupal/openid_connect": "^1.2",
-        "drupal/openkj": "dev-8.x-1.x",
+        "drupal/openkj": "dev-1.x",
         "drupal/r4032login": "^2.1",
+        "drupal/search_api_glossary": "^4.1",
         "drupal/simple_block": "^1.0@beta",
         "drupal/token": "^1.5",
         "drupal/unified_twig_ext": "^1.0",
