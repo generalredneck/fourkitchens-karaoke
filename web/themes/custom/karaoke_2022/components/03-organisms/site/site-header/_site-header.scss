@@ -2,10 +2,9 @@
   background: url('../images/confetti.svg') repeat-x 0 -12px;
   text-align: center;
   position: relative;
-  margin-bottom: 4.5rem;
   max-width: 1224px;
-  margin: auto;
-  margin-top: 2em;
+  margin: 2em auto 4.5rem;
+  z-index: 5;
 
   &__branding img {
     display: inline;
