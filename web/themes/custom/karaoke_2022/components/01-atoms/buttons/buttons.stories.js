@@ -2,7 +2,7 @@
 import button from './button.twig';
 
 import buttonData from './button.yml';
-import buttonAltData from './button-alt.yml';
+import buttonAltData from './button-coin.yml';
 
 /**
  * Storybook Definition.

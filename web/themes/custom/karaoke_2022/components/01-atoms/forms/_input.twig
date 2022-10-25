@@ -10,4 +10,10 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes.addClass('form-item__textfield') }} />{{ children }}
+
+{% set classes = ['form-item__textfield','form-control','form-control-lg'] %}
+
+<input{{attributes.addClass(classes)}}/>{{ children }}
+
+
+{# <input type="text" class="form-control form-control-lg" id="songSearch" aria-describedby="songHelp" placeholder="Enter a song or artist"> #}

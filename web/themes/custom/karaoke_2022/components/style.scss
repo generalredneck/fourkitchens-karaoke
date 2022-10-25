@@ -7,13 +7,19 @@
 @include bsBanner('');
 
 // Components
-@import '00-base/**/*.scss';
-@import '01-atoms/**/*.scss';
-@import '02-molecules/**/*.scss';
-@import '05-pages/**/*.scss';
-@import '03-organisms/site/site-header/site-header';
+ @import '00-base/**/*.scss';
+ @import '01-atoms/**/*.scss';
+ @import '02-molecules/**/*.scss';
+ @import '03-organisms/**/*.scss';
+ @import '03-organisms/**/**/*.scss';
+ @import '04-templates/**/*.scss';
+ @import '05-pages/**/*.scss';
 
-// scss-docs-start import-stack
+//@import '00-base/00-defaults/_03-mixins.scss';
+//@import '01-atoms/buttons/_buttons.scss';
+//@import '01-atoms/lists/list';
+
+
 // Configuration
 @import '~bootstrap/scss/functions';
 @import './vars';
@@ -59,7 +65,7 @@
 @import '~bootstrap/scss/helpers';
 
 // Utilities
-@import '~bootstrap/scss/utilities/api';  
+@import '~bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
 
 @import '03-organisms/google_sso/google_sso_login_button.scss';

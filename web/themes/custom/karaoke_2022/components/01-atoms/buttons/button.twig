@@ -9,7 +9,11 @@
  */
 #}
 
-{% set button_base_class = button_base_class|default('button') %}
+{% set button_base_class = button_base_class|default('btn btn-primary mt-3 btn-lg') %}
+
+{% if button_image %}
+  {% set button_base_class = button_base_class ~ ' ' ~  'coin-button' %}
+{% endif %}
 
 {% set additional_attributes = {
   class: bem(button_base_class, button_modifiers, button_blockname),
@@ -19,4 +23,11 @@
   {% block button_content %}
     {{ button_content }}
   {% endblock %}
+
+  {% if button_image %}
+    {% block button_image %}
+      <img src={{button_image}} alt="" class="coin-button__animation">
+    {% endblock %}
+  {% endif %}
+
 </button>
