@@ -23,10 +23,12 @@ module:
   dynamic_page_cache: 0
   editor: 0
   emulsify_twig: 0
+  facets: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  fk_glossary_block: 0
   fk_karaoke_custom: 0
   help: 0
   history: 0
@@ -58,6 +60,7 @@ module:
   restui: 0
   search_api: 0
   search_api_db: 0
+  search_api_glossary: 0
   serialization: 0
   shortcut: 0
   simple_block: 0

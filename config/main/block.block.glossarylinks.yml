@@ -1,0 +1,25 @@
+uuid: 53b5418e-5191-4271-b650-016a60d71517
+langcode: en
+status: true
+dependencies:
+  module:
+    - fk_glossary_block
+    - system
+  theme:
+    - karaokedesign
+id: glossarylinks
+theme: karaokedesign
+region: content
+weight: 0
+provider: null
+plugin: fk_glossary_links
+settings:
+  id: fk_glossary_links
+  label: 'Glossary Links'
+  label_display: '0'
+  provider: fk_glossary_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/openkj/song-book/browse/song\r\n/openkj/song-book/browse/artist"
