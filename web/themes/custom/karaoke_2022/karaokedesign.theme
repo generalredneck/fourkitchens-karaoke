@@ -7,9 +7,14 @@
 
 function karaokedesign_preprocess_bef_radios(array &$variables) {
 
+  $currently_checked = $_GET['sort_by'] ?? '';
+
   foreach($variables['element']['#options'] as $key => $radio) {
     $variables['radios'][] = [
-      'title' => $radio
+      'title' => $radio,
+      'key' => $key,
+      'name' => 'sort_by',
+      'checked' => $key === $currently_checked ?? '',
     ];
   }
 }
