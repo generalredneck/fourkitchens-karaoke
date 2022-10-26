@@ -6,6 +6,14 @@
 @import '~bootstrap/scss/mixins/banner';
 // @include bsBanner('');
 
+// Configuration
+@import '~bootstrap/scss/functions';
+@import './vars';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
 // Components
 @import '00-base/**/*.scss';
 @import '01-atoms/**/*.scss';
@@ -18,14 +26,6 @@
 //@import '00-base/00-defaults/_03-mixins.scss';
 //@import '01-atoms/buttons/_buttons.scss';
 //@import '01-atoms/lists/list';
-
-// Configuration
-@import '~bootstrap/scss/functions';
-@import './vars';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/maps';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/utilities';
 
 // Layout & components
 @import '~bootstrap/scss/root';
