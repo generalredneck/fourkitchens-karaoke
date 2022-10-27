@@ -34,12 +34,12 @@
 #block-mainpagecontent {
   display: flex;
   flex-flow: column nowrap;
-  
+
   .openid-connect-login-form {
     order: 1;
-    
+
     &::after {
-      content: "";
+      content: '';
       background-color: white;
       height: 1px;
       width: 100%;
@@ -51,6 +51,4 @@
   .user-login-form {
     order: 2;
   }
-
 }
-
