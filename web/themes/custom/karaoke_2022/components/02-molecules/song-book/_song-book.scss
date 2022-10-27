@@ -1,7 +1,7 @@
 .song-book {
   color: inherit;
 
-  .views-infinite-scroll-content-wrapper {
+  .song-book-rapper {
     background: $green-light;
     border-radius: 5px;
     color: $dark;
@@ -35,10 +35,10 @@
 }
 
 #views-exposed-form-4k-song-book-song-book-page .form-radios {
-
   .form-item__label {
     padding: 0;
   }
+
   .form-item:first-child {
     margin-right: 1rem;
   }

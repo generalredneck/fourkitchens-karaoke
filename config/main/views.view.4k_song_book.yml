@@ -7,7 +7,6 @@ dependencies:
   module:
     - better_exposed_filters
     - search_api
-    - views_infinite_scroll
 _core:
   default_config_hash: DjfKDeAzryI7IPryXuiC8NwWj1uvb84-8YyyJJUuY4Y
 id: 4k_song_book
@@ -299,7 +298,7 @@ display:
             multi_type: separator
             multi_separator: ', '
       pager:
-        type: infinite_scroll
+        type: full
         options:
           offset: 0
           items_per_page: 50
@@ -308,6 +307,8 @@ display:
           tags:
             next: ››
             previous: ‹‹
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -316,9 +317,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load More'
-            automatically_load_content: true
+          quantity: 9
       exposed_form:
         type: bef
         options:
@@ -683,5 +682,4 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
       tags:
-        - 'config:facets.facet.song_name_test'
         - 'config:search_api.index.song_index'

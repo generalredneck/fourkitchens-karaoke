@@ -34,18 +34,18 @@
 
 .header__primary {
   display: flex;
-  @media (max-width: $small ) {
- flex-wrap: wrap;
- }
+
+  @media (max-width: $small) {
+    flex-wrap: wrap;
+  }
 }
 
 .header__menu {
   width: 100%;
   margin-top: 1em;
-
 }
 
-.main-menu__nav  {
+.main-menu__nav {
   display: flex;
   justify-content: center;
 
