@@ -12,7 +12,7 @@
     "theme-build": "cd ./web/themes/custom/karaoke_2022 && npm install && npm run build",
     "theme": "cd ./web/themes/custom/karaoke_2022 && npm run develop",
     "build": "lando start && npm run get-db && npm run refresh",
-    "get-db": "lando pull --code=none --files=none --database=test",
+    "get-db": "lando pull --code=none --files=none --database=live",
     "confim": "lando drush cim -y",
     "confex": "lando drush cex -y",
     "refresh": "lando composer install && lando drush updb -y && lando drush cim -y && npm run theme-build && lando drush cr && lando drush uli"
