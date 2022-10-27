@@ -7,6 +7,10 @@
 
   &__branding {
     flex: 0 250px;
+
+    @include medium {
+      flex: 0 300px;
+    }
   }
 
   &__branding img {
