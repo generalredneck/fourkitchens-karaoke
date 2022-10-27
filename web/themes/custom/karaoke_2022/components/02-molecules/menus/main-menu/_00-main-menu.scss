@@ -8,11 +8,7 @@ $main-menu-medium: $medium;
   &--open {
     background-color: clr(background);
     display: block;
-    left: 0;
     overflow-y: scroll;
-    position: absolute;
-    top: 134px;
-    right: 0;
     width: 100%;
   }
 }
@@ -29,6 +25,12 @@ $main-menu-medium: $medium;
   @include medium {
     border-bottom: none;
   }
+}
+
+.main-menu__nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 /*

@@ -5,13 +5,21 @@
   margin: 2em auto 4.5rem;
   z-index: 5;
 
+  &__branding {
+    flex: 0 250px;
+  }
+
   &__branding img {
-    display: inline;
+    display: block;
     padding: 1rem 1rem 0;
     filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
     transition: all 0.25s;
-    max-width: 300px;
-    margin-left: 1.5em;
+    width: 250px;
+
+    @include medium {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
 
@@ -33,22 +41,11 @@
 
 .header__primary {
   display: flex;
-
-  @media (max-width: $small) {
-    flex-wrap: wrap;
-  }
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .header__menu {
-  width: 100%;
-  margin-top: 1em;
-}
-
-.main-menu__nav {
   display: flex;
-  justify-content: center;
-
-  @media (min-width: $small) {
-    justify-content: flex-end;
-  }
+  flex: 0 auto;
 }

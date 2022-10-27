@@ -43,3 +43,18 @@
     margin-right: 1rem;
   }
 }
+
+[data-drupal-selector="views-exposed-form-4k-song-book-song-book-page"] {
+  + * {
+    margin-top: 4rem;
+  }
+}
+
+[data-drupal-selector="openid-connect-login-form"] {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  .google_sso {
+    display: block;
+  }
+}

@@ -2,9 +2,12 @@
 .toggle-expand {
   @include link;
 
-  display: inline-block;
+  display: block;
   padding: $space;
   text-decoration: none;
+  // give the toggle expand a width and height to avoid logo resize and page shift due to differing icon/text dimensions.
+  width: 140px;
+  height: 125px;
 
   /* See main-menu.js */
   &--open {
@@ -31,7 +34,7 @@
 }
 
 .toggle-expand__open {
-  display: inline-block;
+  display: block;
   text-align: center;
 
   .toggle-expand--open & {
@@ -42,16 +45,15 @@
 .toggle-expand__close {
   display: none;
   text-align: center;
-
+  
   &::before {
-    color: clr(background);
     content: 'X';
+    color: clr(background);
     display: block;
     font-size: 2.5rem;
-    line-height: 2;
   }
 
   .toggle-expand--open & {
-    display: inline-block;
+    display: block;
   }
 }
