@@ -50,9 +50,9 @@
   }
 }
 
-[data-drupal-selector="openid-connect-login-form"] {
+.openid-connect-login-form {
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   .google_sso {
     display: block;

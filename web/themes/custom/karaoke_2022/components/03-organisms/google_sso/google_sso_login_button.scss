@@ -1,12 +1,18 @@
 .google_sso {
   display: inline-block;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 
   img {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0.25px;
-    background-color: $gray-darker;
+    padding: 0.45rem;
+    background-color: $black;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
   }
 
   input {
@@ -24,3 +30,27 @@
 .openid-connect-login-form {
   overflow: hidden;
 }
+
+#block-mainpagecontent {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  .openid-connect-login-form {
+    order: 1;
+    
+    &::after {
+      content: "";
+      background-color: white;
+      height: 1px;
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+  }
+
+  .user-login-form {
+    order: 2;
+  }
+
+}
+

@@ -40,11 +40,13 @@
 
     &:hover {
       color: clr(background);
-
-      &::after {
-        color: clr(highlight);
-      }
     }
+  }
+}
+
+.main-menu__item:hover {
+  .main-menu__link::after {
+    color: clr(background);
   }
 }
 
