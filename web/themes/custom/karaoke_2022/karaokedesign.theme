@@ -11,5 +11,5 @@
 function karaokedesign_form_openid_connect_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   $google_form            = &$form['openid_connect_client_google_login'];
   $google_form['#value']  = '4K email';
-  $google_form['#prefix'] = '<div class="google_sso">';
+  $google_form['#prefix'] = '<div class="google_sso"><img src="/themes/custom/karaoke_2022/images/google-logo.png">';
 }
